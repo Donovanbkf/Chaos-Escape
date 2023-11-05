@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+        //bool Isclick = Input.GetMouseButton(0);
 
         m_Movement.Set(horizontal, 0f, vertical);
         m_Movement.Normalize();
@@ -34,6 +35,29 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
 
         bool IsRunning = hasHorizontalInput || hasVerticalInput;
         m_Animator.SetBool("IsRunning", IsRunning);
+        //m_Animator.SetBool("IsAttacking", Isclick);
+
+        if (IsRunning)
+        {
+            m_Animator.SetBool("IsOpening", false);
+            m_Animator.SetBool("IsAttacking", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            m_Animator.SetBool("IsOpening", true);
+        }
+
+        if (Input.GetMouseButton(0))
+        {
+            m_Animator.SetBool("IsAttacking", true);
+        }
+        else
+        {
+            m_Animator.SetBool("IsAttacking", false);
+        }
+
+
 
         /*if (IsRunning)
         {
