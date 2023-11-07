@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        //bool Isclick = Input.GetMouseButton(0);
+        bool Isclick = Input.GetMouseButton(0);
 
         m_Movement.Set(horizontal, 0f, vertical);
         m_Movement.Normalize();
@@ -37,50 +37,40 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
         m_Animator.SetBool("IsRunning", IsRunning);
         //m_Animator.SetBool("IsAttacking", Isclick);
 
+        if (Input.GetMouseButton(0))                           //
+        {
+            m_Animator.SetBool("IsRunning", false);
+            m_Animator.SetBool("IsAttacking", true);
+            Debug.Log("Click");
+        }
+        else
+        {
+            m_Animator.SetBool("IsAttacking", false);
+
+        }
+
         if (IsRunning)
         {
             m_Animator.SetBool("IsOpening", false);
-            m_Animator.SetBool("IsAttacking", false);
+
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             m_Animator.SetBool("IsOpening", true);
+            Debug.Log("Espacio");
         }
-
-        if (Input.GetMouseButton(0))
-        {
-            m_Animator.SetBool("IsAttacking", true);
-        }
-        else
-        {
-            m_Animator.SetBool("IsAttacking", false);
-        }
-
-
-
-        /*if (IsRunning)
-        {
-            if (!m_AudioSource.isPlaying)
-            {
-                m_AudioSource.Play();
-            }
-        }
-        else
-        {
-            m_AudioSource.Stop();
-        }*/
 
         Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
         m_Rotation = Quaternion.LookRotation(desiredForward);
 
     }
 
+
     void OnAnimatorMove()
     {
         m_Rigidbody.MovePosition(m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
         m_Rigidbody.MoveRotation(m_Rotation);
-
     }
 
 }
