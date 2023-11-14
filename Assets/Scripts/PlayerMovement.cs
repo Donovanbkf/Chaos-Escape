@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
     Rigidbody m_Rigidbody;
     //AudioSource m_AudioSource;
     Vector3 m_Movement;
+    Vector3 m_Direction;
     Quaternion m_Rotation = Quaternion.identity;        //se usa para guardar rotaciones
     
     // Start is called before the first frame update
@@ -37,7 +38,9 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
         m_Animator.SetBool("IsRunning", IsRunning);
         //m_Animator.SetBool("IsAttacking", Isclick);
 
-        if (Input.GetMouseButton(0))                           //
+  
+
+        if (Input.GetMouseButton(0))                           
         {
             m_Animator.SetBool("IsRunning", false);
             m_Animator.SetBool("IsAttacking", true);
@@ -63,6 +66,13 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
 
         Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
         m_Rotation = Quaternion.LookRotation(desiredForward);
+
+        float targetAngle = Mathf.Atan2(m_Movement.x, m_Movement.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+        float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+
+        transform.rotation = Quaternion.Euler(0, angle, 0);
+
+        Vector3 moveDir = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
 
     }
 
