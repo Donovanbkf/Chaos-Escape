@@ -968,7 +968,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed: 20
-  cam: {fileID: 1816022395}
 --- !u!136 &4141371112891470210
 CapsuleCollider:
   m_ObjectHideFlags: 0
