@@ -301,6 +301,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Cinemachine.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aP.dag/Unity.AI.Navigation.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.TextMeshPro.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Timeline.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Core.ref.dll"
@@ -309,7 +310,16 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/HealthHeartSystem2/Scripts/HealthBarController.cs"
+"Assets/HealthHeartSystem2/Scripts/HealthBarHUDTester.cs"
+"Assets/HealthHeartSystem2/Scripts/PlayerStatsCac.cs"
+"Assets/HealthHeartSystem2/Scripts/PlayerStatsPrororp.cs"
+"Assets/Scripts/GoblinMovement.cs"
+"Assets/Scripts/LogicaCambiarNivel.cs"
+"Assets/Scripts/Observer.cs"
+"Assets/Scripts/ObserverAttack.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/PlayerStats.cs"
 -langversion:9.0
 
 /deterministic
