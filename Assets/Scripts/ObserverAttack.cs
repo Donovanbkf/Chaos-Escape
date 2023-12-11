@@ -14,7 +14,7 @@ public class ObserverAttack : MonoBehaviour
 
         if (other.transform == player)
         {
-            Debug.Log("Attack1");
+            //Debug.Log("Attack1");
             m_IsPlayerInRange = true;
         }
     }
@@ -45,10 +45,6 @@ public class ObserverAttack : MonoBehaviour
                     
                 }
             }*/
-        }
-        else
-        {
-            goblin.AttackPlayer(false);
         }
     }
 }
