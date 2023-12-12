@@ -30,20 +30,10 @@ public class Observer : MonoBehaviour
     {
         if (m_IsPlayerInRange)
         {
-            Debug.Log("Observer visto");
             goblin.SeenPlayer(true);
-            /*Vector3 direction = player.position - transform.position + Vector3.up;
-            Ray ray = new Ray(transform.position, direction);
-            RaycastHit raycastHit;
-
-            if (Physics.Raycast(ray, out raycastHit))
-            {
-                if (raycastHit.collider.transform == player)
-                {
-                    Debug.Log("Observer visto");
-                    goblin.SeenPlayer(true);
-                }
-            }*/
+        } else
+        {
+            goblin.SeenPlayer(false);
         }
     }
 }

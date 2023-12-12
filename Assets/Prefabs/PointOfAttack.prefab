@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6218963052300811427}
   - component: {fileID: 1729371644310321249}
-  - component: {fileID: 2907524106404361801}
+  - component: {fileID: 3653843799707239680}
   m_Layer: 0
   m_Name: PointOfAttack
   m_TagString: Untagged
@@ -26,13 +26,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6148020834066549907}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9238796, z: -0, w: -0.38268325}
+  m_LocalRotation: {x: 0, y: 0.92387956, z: 0, w: 0.38268343}
   m_LocalPosition: {x: -17.229832, y: 0.33333334, z: 14.589979}
-  m_LocalScale: {x: 0.6666667, y: 2.6666667, z: 3.3333335}
+  m_LocalScale: {x: 1, y: 2, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 135, z: 0}
 --- !u!136 &1729371644310321249
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -56,7 +56,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0.95}
---- !u!114 &2907524106404361801
+--- !u!114 &3653843799707239680
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6148020834066549907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccf69e9e14815574bbefd7c9269906f3, type: 3}
+  m_Script: {fileID: 11500000, guid: b90c71235558d47408faed0305b95f1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}

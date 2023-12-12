@@ -109,7 +109,6 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
--define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -363,6 +362,8 @@
 "Assets/HealthHeartSystem2/Scripts/HealthBarHUDTester.cs"
 "Assets/HealthHeartSystem2/Scripts/PlayerStatsCac.cs"
 "Assets/HealthHeartSystem2/Scripts/PlayerStatsPrororp.cs"
+"Assets/Scripts/Cerrar.cs"
+"Assets/Scripts/GameEnding.cs"
 "Assets/Scripts/GoblinMovement.cs"
 "Assets/Scripts/LogicaCambiarNivel.cs"
 "Assets/Scripts/Observer.cs"
