@@ -35,7 +35,6 @@ public class ObserverAttack : MonoBehaviour
         } else
         {
             goblin.AttackPlayer(false);
-
         }
     }
 }

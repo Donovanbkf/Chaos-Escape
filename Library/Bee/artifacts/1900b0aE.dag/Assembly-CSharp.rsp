@@ -363,6 +363,7 @@
 "Assets/HealthHeartSystem2/Scripts/PlayerStatsCac.cs"
 "Assets/HealthHeartSystem2/Scripts/PlayerStatsPrororp.cs"
 "Assets/Scripts/Cerrar.cs"
+"Assets/Scripts/DetectAttack.cs"
 "Assets/Scripts/GameEnding.cs"
 "Assets/Scripts/GoblinMovement.cs"
 "Assets/Scripts/LogicaCambiarNivel.cs"

@@ -33,6 +33,12 @@ public class GoblinMovement : MonoBehaviour
         m_Animator.SetBool("IsAttacking", isAttack);
     }
 
+    public void Die(bool isDead)
+    {
+        m_Animator.SetBool("isDead", isDead);
+        Debug.Log("Muerto");
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -53,7 +59,6 @@ public class GoblinMovement : MonoBehaviour
                 m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
                 navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
             }
-
 
         }
     }

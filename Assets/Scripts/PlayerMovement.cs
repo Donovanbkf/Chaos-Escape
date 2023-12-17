@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias al using UnityEngine
 {
+    public float speed = 20f;
     public float turnSpeed = 20f;
+    public Transform cameraTransform;
 
     Animator m_Animator;
     Rigidbody m_Rigidbody;
+    Transform m_Transform;
     
     Vector3 m_Movement;
     Vector3 m_Direction;
@@ -18,7 +21,17 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
     {
         m_Animator = GetComponent<Animator>();
         m_Rigidbody = GetComponent<Rigidbody>();
+        m_Transform = GetComponent<Transform>();
     }
+
+    private Vector3 Movement(float vertical, float horizontal, float speed)
+    {
+        Vector3 forward = Vector3.Normalize(m_Transform.position - cameraTransform.position);
+        Vector3 right = Vector3.Cross(Vector3.up, forward);
+        Vector3 displacement = Vector3.Normalize((forward * vertical) + (right * horizontal));
+        return displacement * speed;
+    }
+
 
     // Update is called once per frame
     void FixedUpdate()
@@ -33,7 +46,8 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
         bool hasHorizontalInput = !Mathf.Approximately(horizontal, 0f);
         bool hasVerticalInput = !Mathf.Approximately(vertical, 0f);
 
-        bool IsRunning = hasHorizontalInput || hasVerticalInput;
+        //bool IsRunning = hasHorizontalInput || hasVerticalInput;
+        bool IsRunning = hasVerticalInput;
         m_Animator.SetBool("IsRunning", IsRunning);
   
 
@@ -60,17 +74,19 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
             m_Animator.SetBool("IsOpening", true);
             Debug.Log("Espacio");
         }
+        m_Transform.Rotate(new Vector3(0f, horizontal * turnSpeed * Time.fixedDeltaTime, 0f));
+        //Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
+        //m_Rotation = Quaternion.LookRotation(desiredForward);
 
-        Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
-        m_Rotation = Quaternion.LookRotation(desiredForward);
-        
+        m_Rigidbody.MovePosition(m_Rigidbody.position + m_Transform.forward * vertical * speed * Time.fixedDeltaTime);
+        //m_Rigidbody.MoveRotation(m_Transform.rotation);
     }
 
 
     void OnAnimatorMove()
     {
-        m_Rigidbody.MovePosition(m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
-        m_Rigidbody.MoveRotation(m_Rotation);
+        //m_Rigidbody.MovePosition(m_Rigidbody.position + m_Transform.forward * m_Animator.deltaPosition.magnitude);
+        //m_Rigidbody.MoveRotation(m_Transform.rotation);
     }
 
 }

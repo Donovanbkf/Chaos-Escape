@@ -56,6 +56,7 @@
     <Compile Include="Assets\Scripts\Cerrar.cs" />
     <Compile Include="Assets\HealthHeartSystem2\Scripts\HealthBarController.cs" />
     <Compile Include="Assets\Scripts\GameEnding.cs" />
+    <Compile Include="Assets\Scripts\DetectAttack.cs" />
     <Compile Include="Assets\Scripts\LogicaCambiarNivel.cs" />
     <Compile Include="Assets\HealthHeartSystem2\Scripts\PlayerStatsCac.cs" />
     <Compile Include="Assets\Scripts\GoblinMovement.cs" />
