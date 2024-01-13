@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
 
     Animator m_Animator;
     Rigidbody m_Rigidbody;
+    AudioSource m_AudioSource;
     Transform m_Transform;
     
     Vector3 m_Movement;
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
         m_Animator = GetComponent<Animator>();
         m_Rigidbody = GetComponent<Rigidbody>();
         m_Transform = GetComponent<Transform>();
+        m_AudioSource = GetComponent<AudioSource>();
     }
 
     private Vector3 Movement(float vertical, float horizontal, float speed)
@@ -67,6 +69,14 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
         {
             m_Animator.SetBool("IsOpening", false);
 
+            if (!m_AudioSource.isPlaying)
+            {
+                m_AudioSource.Play();
+            }
+        }
+        else
+        {
+            m_AudioSource.Stop();
         }
 
         if (Input.GetKeyDown(KeyCode.Space))

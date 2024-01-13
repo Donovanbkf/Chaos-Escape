@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638392938174921941
+      ticks: 638407575718789156
     m_Hash: 1404459675
   m_LockFileStatus:
     m_FilePath: "C:/Users/Usuario/Uni/Ingenier\xEDa Inform\xE1tica/Proyectos/Chaos-Escape/Packages/packages-lock.json"
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638392938179968734
+      ticks: 638407575724276623
     m_Hash: 1158216882
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

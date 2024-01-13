@@ -15,7 +15,7 @@ C:/Users/Usuario/Uni/Ingeniería Informática/Proyectos/Chaos-Escape
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-60545
+56435
 Successfully changed project path to: C:/Users/Usuario/Uni/Ingeniería Informática/Proyectos/Chaos-Escape
 C:/Users/Usuario/Uni/Ingeniería Informática/Proyectos/Chaos-Escape
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Usuario/Uni/Ingeniería Informática/Proyectos/Chaos-Escape
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [22256] Host "[IP] 192.168.1.134 [Port] 0 [Flags] 2 [Guid] 1206961054 [EditorId] 1206961054 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ANA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [26456] Host "[IP] 192.168.1.134 [Port] 0 [Flags] 2 [Guid] 3484671139 [EditorId] 3484671139 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ANA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [22256] Host "[IP] 192.168.1.134 [Port] 0 [Flags] 2 [Guid] 1206961054 [EditorId] 1206961054 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ANA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [26456] Host "[IP] 192.168.1.134 [Port] 0 [Flags] 2 [Guid] 3484671139 [EditorId] 3484671139 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ANA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 6.14 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 7.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.10f1 (ff3792e53c62)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005764 seconds.
-- Loaded All Assemblies, in  0.462 seconds
+Registered in 0.004771 seconds.
+- Loaded All Assemblies, in  0.386 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.210 seconds
-Domain Reload Profiling: 671ms
-	BeginReloadAssembly (184ms)
+- Finished resetting the current domain, in  0.205 seconds
+Domain Reload Profiling: 590ms
+	BeginReloadAssembly (138ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (170ms)
-		LoadAssemblies (183ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (155ms)
+		LoadAssemblies (140ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (167ms)
-			TypeCache.Refresh (166ms)
-				TypeCache.ScanAssembly (156ms)
+		AnalyzeDomain (149ms)
+			TypeCache.Refresh (148ms)
+				TypeCache.ScanAssembly (132ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (210ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (205ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (163ms)
+		SetupLoadedEditorAssemblies (157ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
+			InitializePlatformSupportModulesInManaged (8ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (107ms)
-			ProcessInitializeOnLoadMethodAttributes (42ms)
+			ProcessInitializeOnLoadAttributes (97ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,8 +117,8 @@ Domain Reload Profiling: 671ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.745 seconds
-Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.204 seconds
+Refreshing native plugins compatible for Editor in 2.67 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -126,47 +126,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.488 seconds
-Domain Reload Profiling: 1232ms
-	BeginReloadAssembly (149ms)
+- Finished resetting the current domain, in  0.618 seconds
+Domain Reload Profiling: 1820ms
+	BeginReloadAssembly (162ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (525ms)
-		LoadAssemblies (379ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (961ms)
+		LoadAssemblies (524ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (232ms)
-			TypeCache.Refresh (205ms)
-				TypeCache.ScanAssembly (186ms)
-			ScanForSourceGeneratedMonoScriptInfo (21ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (489ms)
+		AnalyzeDomain (536ms)
+			TypeCache.Refresh (476ms)
+				TypeCache.ScanAssembly (317ms)
+			ScanForSourceGeneratedMonoScriptInfo (48ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (619ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (355ms)
+		SetupLoadedEditorAssemblies (459ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (47ms)
-			ProcessInitializeOnLoadAttributes (276ms)
-			ProcessInitializeOnLoadMethodAttributes (16ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (350ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
 			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 2.45 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 30.63 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3288 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (130.9 KB). Loaded Objects now: 3769.
-Memory consumption went from 130.3 MB to 130.2 MB.
-Total: 2.526400 ms (FindLiveObjects: 0.223700 ms CreateObjectMapping: 0.158400 ms MarkObjects: 2.009400 ms  DeleteObjects: 0.133800 ms)
+Unloading 6287 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 212 unused Assets / (13.1 MB). Loaded Objects now: 6656.
+Memory consumption went from 264.0 MB to 251.0 MB.
+Total: 5.087200 ms (FindLiveObjects: 0.379100 ms CreateObjectMapping: 0.226600 ms MarkObjects: 2.773600 ms  DeleteObjects: 1.706700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -183,63 +183,91 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 943527.912831 seconds.
-  path: Assets/LaFinca/Viking Gods/Thor/Textures/mjolnir/AO.png
-  artifactKey: Guid(351d973f7f873a0418e7b352fbe6997f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LaFinca/Viking Gods/Thor/Textures/mjolnir/AO.png using Guid(351d973f7f873a0418e7b352fbe6997f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1052b0741e44e81b9ede05ad83efee1') in 0.074644 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.368 seconds
+Refreshing native plugins compatible for Editor in 3.40 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.892 seconds
+Domain Reload Profiling: 1258ms
+	BeginReloadAssembly (120ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (183ms)
+		LoadAssemblies (227ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (893ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (370ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (276ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 2.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6166 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 173 unused Assets / (13.1 MB). Loaded Objects now: 6671.
+Memory consumption went from 236.7 MB to 223.7 MB.
+Total: 4.782500 ms (FindLiveObjects: 0.327200 ms CreateObjectMapping: 0.271400 ms MarkObjects: 2.225400 ms  DeleteObjects: 1.957700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/LaFinca/Viking Gods/Thor/Textures/hair/low _cabelos_Roughness.png
-  artifactKey: Guid(f509f8b4ae1a2904e98c38fa8c1be896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LaFinca/Viking Gods/Thor/Textures/hair/low _cabelos_Roughness.png using Guid(f509f8b4ae1a2904e98c38fa8c1be896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd758ad698d3e8629a4ee7527af5971a1') in 0.017912 seconds
+  Time since last request: 164632.283588 seconds.
+  path: Assets/RPG&Fantasy Mobile GUI/panel_elements/panel_element_47.png
+  artifactKey: Guid(5d0cb631889626203aaf026f11355b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG&Fantasy Mobile GUI/panel_elements/panel_element_47.png using Guid(5d0cb631889626203aaf026f11355b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3371e48c47f4ef84393994a2f2d1f37') in 0.088184 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/LaFinca/Viking Gods/Thor/Textures/pants/low _calça_Roughness.png
-  artifactKey: Guid(45e8b189f1a9a6a46b701d1c91a26657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LaFinca/Viking Gods/Thor/Textures/pants/low _calça_Roughness.png using Guid(45e8b189f1a9a6a46b701d1c91a26657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2210f529f93d1285af71d161976d89f') in 0.020511 seconds
+  Time since last request: 7.377386 seconds.
+  path: Assets/RPG&Fantasy Mobile GUI/panels/panel_07.png
+  artifactKey: Guid(4409c2fc9dc87fa688fb47b88485e22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG&Fantasy Mobile GUI/panels/panel_07.png using Guid(4409c2fc9dc87fa688fb47b88485e22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3277de9858d82cf4ecede69827bd145f') in 0.053770 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/LaFinca/Viking Gods/Thor/Textures/bracers/low _braçadeiras_Roughness.png
-  artifactKey: Guid(fb401ebb90ac5af4ea281e3a4458758c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LaFinca/Viking Gods/Thor/Textures/bracers/low _braçadeiras_Roughness.png using Guid(fb401ebb90ac5af4ea281e3a4458758c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6577c4c2bfb185009fb24bad3f059a29') in 0.017864 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 7.164577 seconds.
-  path: Assets/LaFinca/Viking Gods/Thor/Textures/bracers/low _braçadeiras_Metallic.png
-  artifactKey: Guid(de1dbc0ceb3aba2469de15bbff5f357e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LaFinca/Viking Gods/Thor/Textures/bracers/low _braçadeiras_Metallic.png using Guid(de1dbc0ceb3aba2469de15bbff5f357e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f3e8537871ab256b6aca2fe21070202') in 0.046579 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/LaFinca/Viking Gods/Thor/Textures/bracers/low _braçadeiras_Normal.png
-  artifactKey: Guid(379758b21d288694c9439ce945ea0d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LaFinca/Viking Gods/Thor/Textures/bracers/low _braçadeiras_Normal.png using Guid(379758b21d288694c9439ce945ea0d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6340a003697ca41b7173630f9c9c5ccd') in 0.054518 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 4.603301 seconds.
-  path: Assets/Materials/Pack Free 2/Textures/Grass 2/T_Pack_Free_Grass_2_normal.tga
-  artifactKey: Guid(13b3d15d5dc812540b4596a586fddb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Pack Free 2/Textures/Grass 2/T_Pack_Free_Grass_2_normal.tga using Guid(13b3d15d5dc812540b4596a586fddb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e17d3f0d6130316ad9abfe7be3ceb7') in 0.069354 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operaci�n de E/S se anul� por una salida de subproceso o por una solicitud de aplicaci�n.
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0
