@@ -54,18 +54,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Cerrar.cs" />
-    <Compile Include="Assets\Scripts\ObserverAttack.cs" />
-    <Compile Include="Assets\HealthHeartSystem2\Scripts\HealthBarHUDTester.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\HealthHeartSystem2\Scripts\HealthBarController.cs" />
     <Compile Include="Assets\Scripts\GameEnding.cs" />
     <Compile Include="Assets\Scripts\DetectAttack.cs" />
     <Compile Include="Assets\Scripts\LogicaCambiarNivel.cs" />
     <Compile Include="Assets\HealthHeartSystem2\Scripts\PlayerStatsCac.cs" />
     <Compile Include="Assets\Scripts\GoblinMovement.cs" />
+    <Compile Include="Assets\Scripts\ObserverAttack.cs" />
+    <Compile Include="Assets\HealthHeartSystem2\Scripts\HealthBarHUDTester.cs" />
     <Compile Include="Assets\Scripts\Observer.cs" />
     <Compile Include="Assets\HealthHeartSystem2\Scripts\PlayerStatsPrororp.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HealthHeartSystem2\readme.txt" />
