@@ -109,6 +109,7 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -366,6 +367,7 @@
 "Assets/Scripts/DetectAttack.cs"
 "Assets/Scripts/GameEnding.cs"
 "Assets/Scripts/GoblinMovement.cs"
+"Assets/Scripts/HeartParent.cs"
 "Assets/Scripts/LogicaCambiarNivel.cs"
 "Assets/Scripts/Observer.cs"
 "Assets/Scripts/ObserverAttack.cs"

@@ -6,8 +6,11 @@ public class ObserverAttack : MonoBehaviour
 {
     public Transform player;
     public GoblinMovement goblin;
-
+    public HeartParent hearts;
     bool m_IsPlayerInRange;
+
+    private float timer = 0f;
+    private float duration = 1.2f;
 
     void OnTriggerEnter(Collider other)
     {
@@ -29,9 +32,16 @@ public class ObserverAttack : MonoBehaviour
     void Update()
     {
         if (m_IsPlayerInRange)
-        {   
+        {
+            timer += Time.deltaTime;
             goblin.AttackPlayer(true);
-           
+
+            if (timer >= duration)
+            {
+                hearts.DesactivarVida();
+                timer = 0f;
+            }
+
         } else
         {
             goblin.AttackPlayer(false);
