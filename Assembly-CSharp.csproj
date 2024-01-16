@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Cerrar.cs" />
+    <Compile Include="Assets\Scripts\VidaTrigger.cs" />
     <Compile Include="Assets\HealthHeartSystem2\Scripts\HealthBarController.cs" />
     <Compile Include="Assets\Scripts\GameEnding.cs" />
     <Compile Include="Assets\Scripts\DetectAttack.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Assets\Scripts\ObserverAttack.cs" />
     <Compile Include="Assets\HealthHeartSystem2\Scripts\HealthBarHUDTester.cs" />
     <Compile Include="Assets\Scripts\Observer.cs" />
+    <Compile Include="Assets\Scripts\MuroTrigger.cs" />
     <Compile Include="Assets\HealthHeartSystem2\Scripts\PlayerStatsPrororp.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />

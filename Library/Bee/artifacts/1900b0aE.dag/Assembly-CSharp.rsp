@@ -368,10 +368,12 @@
 "Assets/Scripts/GoblinMovement.cs"
 "Assets/Scripts/HeartParent.cs"
 "Assets/Scripts/LogicaCambiarNivel.cs"
+"Assets/Scripts/MuroTrigger.cs"
 "Assets/Scripts/Observer.cs"
 "Assets/Scripts/ObserverAttack.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/PlayerStats.cs"
+"Assets/Scripts/VidaTrigger.cs"
 -langversion:9.0
 
 /deterministic
