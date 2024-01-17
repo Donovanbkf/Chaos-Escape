@@ -51,9 +51,7 @@ public class GoblinMovement : MonoBehaviour
     {
         if (m_IsPlayerAttack)
         {
-            Debug.Log("muerto");
             isDead = true;
-            Debug.Log(isDead);
             m_Animator.SetBool("IsDead", Dead);
         }
     }

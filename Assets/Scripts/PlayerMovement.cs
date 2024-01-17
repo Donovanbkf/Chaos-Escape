@@ -83,11 +83,10 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
             m_AudioSource.Stop();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
             m_Animator.SetBool("IsOpening", true);
-            Debug.Log("Espacio");
-        }
+        }*/
         m_Transform.Rotate(new Vector3(0f, horizontal * turnSpeed * Time.fixedDeltaTime, 0f));
         //Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
         //m_Rotation = Quaternion.LookRotation(desiredForward);

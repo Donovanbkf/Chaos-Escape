@@ -41,7 +41,6 @@ public class ObserverAttack : MonoBehaviour
                 bool muerto = goblin.IsDead();
                 if (muerto == false)
                 {
-                    Debug.Log(goblin.IsDead());
                     hearts.DesactivarVida();
                     timer = 0f;
                 }
