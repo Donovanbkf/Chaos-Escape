@@ -5,7 +5,7 @@ using UnityEngine;
 public class VidaTrigger : MonoBehaviour
 {
     public GameObject player;
-    public PlayerStats stats;
+    public HeartParent hearts;
 
     bool m_IsPlayerAtChest;
     bool m_ChestOpened = false;
@@ -24,7 +24,7 @@ public class VidaTrigger : MonoBehaviour
         {
             if (!m_ChestOpened)
             {
-                stats.Heal(1);
+                hearts.ActivarVida();
                 m_ChestOpened = true;
             }
         }

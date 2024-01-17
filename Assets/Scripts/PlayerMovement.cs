@@ -7,7 +7,9 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
     public float speed = 20f;
     public float turnSpeed = 20f;
     public Transform cameraTransform;
-
+    public GoblinMovement goblin1;
+    public GoblinMovement goblin2;
+    public GoblinMovement goblin3;
     Animator m_Animator;
     Rigidbody m_Rigidbody;
     AudioSource m_AudioSource;
@@ -57,7 +59,9 @@ public class PlayerMovement : MonoBehaviour   //MonoBehaviour funciona gracias a
         {
             m_Animator.SetBool("IsRunning", false);
             m_Animator.SetBool("IsAttacking", true);
-            Debug.Log("Click");
+            goblin1.Die(true);
+            goblin2.Die(true);
+            goblin3.Die(true);
         }
         else
         {

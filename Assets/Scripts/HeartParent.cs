@@ -29,6 +29,10 @@ public class HeartParent : MonoBehaviour
 
     public void ActivarVida()
     {
-        vidas[2].SetActive(true);
+        if (CantVidas < 3)
+        {
+            CantVidas += 1;
+            vidas[CantVidas - 1].SetActive(true);
+        }
     }
 }

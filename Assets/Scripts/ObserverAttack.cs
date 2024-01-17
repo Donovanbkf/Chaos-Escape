@@ -38,8 +38,13 @@ public class ObserverAttack : MonoBehaviour
 
             if (timer >= duration)
             {
-                hearts.DesactivarVida();
-                timer = 0f;
+                bool muerto = goblin.IsDead();
+                if (muerto == false)
+                {
+                    Debug.Log(goblin.IsDead());
+                    hearts.DesactivarVida();
+                    timer = 0f;
+                }
             }
 
         } else

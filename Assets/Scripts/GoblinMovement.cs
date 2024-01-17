@@ -14,29 +14,48 @@ public class GoblinMovement : MonoBehaviour
     public Transform waypointStart;
     // Start is called before the first frame update
     int m_CurrentWaypointIndex;
+    bool isDead = false;
 
+    private float timer = 0f;
+    private float duration = 0.6f;
     void Start()
     {
         m_Animator = GetComponent<Animator>();
         navMeshAgent.SetDestination(waypoints[0].position);
     }
 
+    public bool IsDead()
+    {
+        return isDead;
+    }
+
     public void SeenPlayer(bool isSeen)
     {
-        m_IsPlayerSeen = isSeen;
-        m_Animator.SetBool("IsRunning", isSeen);
+        if (isDead == false)
+        {
+            m_IsPlayerSeen = isSeen;
+            m_Animator.SetBool("IsRunning", isSeen);
+        }
     }
 
     public void AttackPlayer(bool isAttack)
     {
-        m_IsPlayerAttack = isAttack;
-        m_Animator.SetBool("IsAttacking", isAttack);
+        if (isDead == false)
+        {
+            m_IsPlayerAttack = isAttack;
+            m_Animator.SetBool("IsAttacking", isAttack);
+        }
     }
 
-    public void Die(bool isDead)
+    public void Die(bool Dead)
     {
-        m_Animator.SetBool("isDead", isDead);
-        Debug.Log("Muerto");
+        if (m_IsPlayerAttack)
+        {
+            Debug.Log("muerto");
+            isDead = true;
+            Debug.Log(isDead);
+            m_Animator.SetBool("IsDead", Dead);
+        }
     }
 
     // Update is called once per frame
@@ -52,8 +71,18 @@ public class GoblinMovement : MonoBehaviour
             
             if (m_IsPlayerAttack)
             {
-                stats.TakeDamage(1);
-                m_Animator.SetBool("IsAttacking", true);
+                if (isDead == false)
+                {
+                    m_Animator.SetBool("IsAttacking", true);
+                }
+                else
+                {
+                    timer += Time.deltaTime;
+                    if (timer >= duration)
+                    {
+                        m_Animator.SetBool("IsDead", true);
+                    }
+                }
             } else
             {
                 m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
